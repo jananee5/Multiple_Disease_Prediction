@@ -23,9 +23,9 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Load datasets
 @st.cache_data
 def load_data():
-    liver_data = pd.read_csv("C:/Users/JANANI V/Desktop/MDP/Indian_Liver_patient.csv")
-    kidney_data = pd.read_csv("C:/Users/JANANI V/Desktop/MDP/kidney_disease.csv")
-    parkinsons_data = pd.read_csv("C:/Users/JANANI V/Desktop/MDP/parkinsons.csv")
+    liver_data = pd.read_csv("Indian_Liver_patient.csv")
+    kidney_data = pd.read_csv("kidney_disease.csv")
+    parkinsons_data = pd.read_csv("parkinsons.csv")
     return liver_data, kidney_data, parkinsons_data
 
 liver_data, kidney_data, parkinsons_data = load_data()
